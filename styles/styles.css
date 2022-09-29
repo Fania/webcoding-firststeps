@@ -25,9 +25,30 @@ header h1 {
   padding-bottom: .25em;
 }
 
+a{
+  /* replaces the "default blue" links with parent color: */ 
+  color: inherit;
+}
+
 nav {
+  display: flex;
+  flex-direction: row; 
+  line-height: 1.25em;
   width: 100%;
   background-color: var(--color3);
+}
+
+nav a:link, 
+nav a:visited {
+  padding: 6px 4px;
+  text-align: center;
+  border-right: 1px solid var(--color4); 
+  text-decoration: none;
+}
+
+/* removes the right border on the last menu item: */
+nav a:last-child { 
+  border: 0;
 }
 
 main {
@@ -47,6 +68,12 @@ main {
 
   .wrapper {
     flex-direction: row; 
+  }
+  main { 
+    width: 75%;
+  } 
+  nav {
+    width: 25%; 
   }
 
 }
