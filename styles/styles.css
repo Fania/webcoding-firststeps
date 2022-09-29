@@ -36,3 +36,17 @@ main {
   background-color: var(--color4); 
   line-height: 1.85em;
 }
+
+.wrapper {
+  display: flex; 
+  flex-direction: column;
+}
+
+/* STYLES "BREAKPOINT" FOR WIDTHS ABOVE 600 pixels: */
+@media all and (min-width: 600px) { 
+
+  .wrapper {
+    flex-direction: row; 
+  }
+
+}
