@@ -58,6 +58,13 @@ main {
   line-height: 1.85em;
 }
 
+main h2 {
+  font-size: 1.25em;
+  text-align: center;
+  margin: 0;
+  border-bottom: 2px solid var(--color3);
+}
+
 .wrapper {
   display: flex; 
   flex-direction: column;
@@ -72,6 +79,9 @@ main {
   main { 
     width: 75%;
   } 
+  main h2 { 
+    text-align: left;
+  }
   nav {
     width: 25%; 
     flex-direction: column; 
