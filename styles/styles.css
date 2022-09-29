@@ -47,7 +47,7 @@ nav a:visited {
 }
 
 /* removes the right border on the last menu item: */
-nav a:last-child { 
+nav a:last-child {
   border: 0;
 }
 
@@ -74,6 +74,20 @@ main {
   } 
   nav {
     width: 25%; 
+    flex-direction: column; 
+    line-height: 2.5em;
+  }
+  nav a:link, 
+  nav a:visited {
+    text-align: left;
+    padding-left: 12px;
+    border-right: 0;
+    border-bottom: 2px solid var(--color4);
+    transition: background 0.75s;
+  }
+  nav a:hover {
+    background: var(--color4); 
+    border-right: 2px solid var(--color2);
   }
 
 }
