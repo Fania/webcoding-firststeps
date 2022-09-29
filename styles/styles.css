@@ -65,6 +65,39 @@ main h2 {
   border-bottom: 2px solid var(--color3);
 }
 
+/* makes images on the homepage into a grid: */
+.homepage {
+  display: flex;
+  flex-wrap: wrap;
+  /* note CSS spelling of ‘center’: */ 
+  justify-content: center;
+}
+.homepage figure {
+  width: 120px;
+  margin: 12px 6px 6px; 
+}
+
+figure {
+  border: 1px solid var(--color2); 
+  padding: 0;
+  margin: 12px 0 0; 
+  border-radius: 12px;
+  overflow: hidden; 
+  background-color: var(--color3);
+}
+
+figure img { 
+  display: block; 
+  width: 100%;
+}
+
+figcaption {
+  text-align: center;
+  /* sets padding top-bottom, right-left: */ 
+  padding: 2px 6px;
+  font-size: .75em;
+}
+
 .wrapper {
   display: flex; 
   flex-direction: column;
@@ -81,6 +114,14 @@ main h2 {
   } 
   main h2 { 
     text-align: left;
+  }
+  /* changes background and enlarges figure tag on hover: */
+  .homepage figure {
+    transition-property: transform, background; transition-duration: .5s;
+  }
+  .homepage figure:hover {
+    transform: scale(1.1); /*105%*/
+    background: var(--color4);
   }
   nav {
     width: 25%; 
