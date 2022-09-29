@@ -24,3 +24,15 @@ header h1 {
   letter-spacing: 1px; 
   padding-bottom: .25em;
 }
+
+nav {
+  width: 100%;
+  background-color: var(--color3);
+}
+
+main {
+  /* sets padding: top, right+left, bottom: */ 
+  padding: 1.75em 30px 2em;
+  background-color: var(--color4); 
+  line-height: 1.85em;
+}
