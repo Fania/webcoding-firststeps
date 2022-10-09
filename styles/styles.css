@@ -16,6 +16,7 @@ header {
   display: flex; 
   justify-content: center; 
   align-items: center;
+  font-family: 'Potta One', cursive;
 }
 
 header h1 {
@@ -25,7 +26,12 @@ header h1 {
   padding-bottom: .25em;
 }
 
-a{
+h1 a {
+  /* removes default link underline: */ 
+  text-decoration: none;
+}
+
+a {
   /* replaces the "default blue" links with parent color: */ 
   color: inherit;
 }
@@ -115,6 +121,11 @@ figcaption {
   main h2 { 
     text-align: left;
   }
+  /* images on individual artist's pages */
+  figure {
+    float: right;
+    /* top, right, bottom, left */ margin: 12px 0 0 10px;
+  }
   /* changes background and enlarges figure tag on hover: */
   .homepage figure {
     transition-property: transform, background; transition-duration: .5s;
@@ -127,6 +138,12 @@ figcaption {
     width: 25%; 
     flex-direction: column; 
     line-height: 2.5em;
+  }
+  nav a.here {
+    background: var(--color4);
+  }
+  nav a.here:hover { 
+    border-right: none;
   }
   nav a:link, 
   nav a:visited {
